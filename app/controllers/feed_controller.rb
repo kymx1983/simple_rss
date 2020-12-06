@@ -2,16 +2,25 @@ require 'rss'
 
 class FeedController < ApplicationController
   def index
-    url = "https://taisy0.com/feed"
+    @feeds = Feed.all
+  end
+
+  def update
+      url = "https://taisy0.com/feed"
     rss = RSS::Parser.parse(url)
+
     puts "blog title:" + rss.channel.title
     puts
     rss.items.each do |item|
-      puts item.pubDate.strftime( "%Y/%m/%d" )
-      puts item.title
-      puts item.link
-      p item.description
-      puts
+      feed = Feed.new
+      feed.pub_date = item.pubDate.strftime( "%Y/%m/%d" )
+      feed.title = item.title
+      feed.link = item.link
+      feed.description = item.description
+      # p item.description
+      # puts
+      feed.save
     end
+    redirect_to('/feed/index')
   end
 end
