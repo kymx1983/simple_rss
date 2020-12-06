@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SimpleRss</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="">
+<head>
+  <title>MyIssueList</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<header>
+  <ul>
+    <li><%= link_to("ルーティーン", "/routine/index") %></li>
+    <li><%= link_to("タスク", "/task/index") %></li>
+    <li><%= link_to("Top", "/") %></li>
+  </ul>
+</header>
+
+<% if flash[:notice] %>
+  <div class="flash_notice">
+    <%= flash[:notice] %>
+  </div>
+<% elsif flash[:alert] %>
+  <div class="flash_alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+<%= yield %>
+</body>
 </html>

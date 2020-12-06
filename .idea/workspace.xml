@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ac59e2-93cc-4b32-8349-9a9e014178d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/simple_rss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simple_rss.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/page_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/page/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/page/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/page/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/page/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20201205150539_create_pages.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201205150539_create_pages.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +143,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607180467040</updated>
-      <workItem from="1607180469723" duration="659000" />
+      <workItem from="1607180469723" duration="3718000" />
+      <workItem from="1607221845746" duration="3241000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/page_controller.rb</url>
+          <line>1</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,2 +1,36 @@
-<h1>Page#show</h1>
-<p>Find me in app/views/page/show.html.erb</p>
+<div class="main">
+  <div class="container">
+    <h1>ページ詳細</h1>
+    <div class="form-group">
+      <h2><label>タイトル:</label></h2>
+      <div class="input-content">
+        <%= @page.title %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2><label>URL:</label></h2>
+      <div class="input-content">
+        <%= @page.url %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <h2><label>メモ:</label></h2>
+      <div class="input-content">
+        <%= @page.memo %>
+      </div>
+    </div>
+
+    <hr>
+    <br>
+    <wrap class="link-button">
+      <%= link_to("編集", "/task/edit/#{@page.id}") %>
+    </wrap>
+
+    <wrap class="link-button">
+      <%= link_to("削除", "/task/destroy/#{@page.id}") %>
+    </wrap>
+    <br><br>
+  </div>
+</div>

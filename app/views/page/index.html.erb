@@ -1,2 +1,43 @@
-<h1>Page#index</h1>
-<p>Find me in app/views/page/index.html.erb</p>
+<div class="main">
+
+  <div class="container_wide">
+    <h1>ページ一覧</h1>
+    <table>
+      <tr>
+        <th>タイトル</th>
+        <th>URL</th>
+        <th>操作</th>
+      </tr>
+
+      <% @pages.each do |page| %>
+        <tr>
+          <td>
+            <%= page.title %>
+          </td>
+
+          <td>
+            <%= page.url %>
+          </td>
+
+          <td>
+            <wrap class="">
+              <%= link_to("詳細", "/page/show/#{page.id}") %>
+            </wrap>
+            <wrap class="link-button">
+              <%= link_to("編集", "/page/edit/#{page.id}") %>
+            </wrap>
+            <wrap class="link-button">
+              <%= link_to("削除", "/page/destroy/#{page.id}") %>
+            </wrap>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <wrap class="link-button">
+    <%= link_to("新規登録", "/page/new") %>
+  </wrap>
+
+
+</div>

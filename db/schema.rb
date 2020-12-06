@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_12_05_150539) do
 
   create_table "pages", force: :cascade do |t|
     t.string "title"
-    t.integer "type"
+    t.integer "page_type"
     t.string "url"
     t.string "memo"
     t.datetime "created_at", precision: 6, null: false
