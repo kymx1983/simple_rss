@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'feed/index'
   get 'page/index'
   get "page/show/:id" => "page#show"
   get 'page/new'
