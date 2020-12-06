@@ -1,4 +1,8 @@
 <div class="main">
+  <wrap class="link-button">
+    <%= link_to("すべて既読にする", "/feed/all_read") %>
+    <%= link_to("更新", "/feed/update") %>
+  </wrap>
 
   <div class="container_wide">
     <h1>ページ一覧</h1>
@@ -17,15 +21,15 @@
 
           <td>
 
-            <%= link_to(feed.title, feed.link) %>
+            <%= link_to(feed.title, feed.link, target: "_blank") %>
           </td>
 
           <td>
             <wrap class="">
-              <%= link_to("詳細", "/feed/show/#{feed.id}") %>
+              <%= link_to("既読", "/feed/read/#{feed.id}") %>
             </wrap>
             <wrap class="link-button">
-              <%= link_to("編集", "/feed/edit/#{feed.id}") %>
+              <%= link_to("保存", "/feed/save/#{feed.id}") %>
             </wrap>
             <wrap class="link-button">
               <%= link_to("削除", "/feed/destroy/#{feed.id}") %>
@@ -35,10 +39,5 @@
       <% end %>
     </table>
   </div>
-
-  <wrap class="link-button">
-    <%= link_to("更新", "/feed/update") %>
-  </wrap>
-
 
 </div>

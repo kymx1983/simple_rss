@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'feed#index'
   get 'feed/index'
   get 'feed/update'
   get 'page/index'
